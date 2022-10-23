@@ -9,3 +9,5 @@ services:
       - "3000:3000"
     environement:
       - GF_INSTALL_PLUGINS: marcusolsson-json-datasource
+    #volumes:
+    #  - ./provisioning:/etc/grafana/provisioning
