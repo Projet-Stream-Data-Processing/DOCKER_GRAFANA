@@ -5,9 +5,12 @@ services:
   grafana:
     image: grafana/grafana
     container_name: grafana
+    restart: unless-stopped
     ports:
       - "3000:3000"
-    environement:
-      - GF_INSTALL_PLUGINS: marcusolsson-json-datasource
-    #volumes:
-    #  - ./provisioning:/etc/grafana/provisioning
+    environment:
+      GF_INSTALL_PLUGINS: grafana-simple-json-datasource
+      GF_SECURITY_ADMIN_PASSWORD: password
+
+    volumes:
+      - ./grafana:/etc/grafana/provisioning/

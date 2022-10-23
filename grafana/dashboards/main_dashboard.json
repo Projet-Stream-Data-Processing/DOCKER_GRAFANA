@@ -91,11 +91,11 @@
         "x": 0,
         "y": 0
       },
-      "id": 6,
+      "id": 8,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "table",
+          "displayMode": "list",
           "placement": "bottom",
           "showLegend": true
         },
@@ -104,29 +104,19 @@
           "sort": "none"
         }
       },
+      "pluginVersion": "9.2.1",
       "targets": [
         {
           "datasource": {
             "type": "grafana-simple-json-datasource",
             "uid": "J7S_vZH4k"
           },
-          "hide": true,
           "refId": "A",
-          "target": "id",
-          "type": "table"
-        },
-        {
-          "datasource": {
-            "type": "grafana-simple-json-datasource",
-            "uid": "J7S_vZH4k"
-          },
-          "hide": false,
-          "refId": "B",
-          "target": "available_bike_stands",
+          "target": "available_bikes",
           "type": "timeserie"
         }
       ],
-      "title": "Stands dispos Graphs",
+      "title": "Vélos dispo par Stations Graph",
       "type": "timeseries"
     },
     {
@@ -192,11 +182,11 @@
         "x": 12,
         "y": 0
       },
-      "id": 8,
+      "id": 6,
       "options": {
         "legend": {
           "calcs": [],
-          "displayMode": "table",
+          "displayMode": "list",
           "placement": "bottom",
           "showLegend": true
         },
@@ -211,23 +201,13 @@
             "type": "grafana-simple-json-datasource",
             "uid": "J7S_vZH4k"
           },
-          "hide": true,
-          "refId": "A",
-          "target": "id",
-          "type": "table"
-        },
-        {
-          "datasource": {
-            "type": "grafana-simple-json-datasource",
-            "uid": "J7S_vZH4k"
-          },
           "hide": false,
           "refId": "B",
-          "target": "available_bikes",
+          "target": "available_bike_stands",
           "type": "timeserie"
         }
       ],
-      "title": "Vélos dispo par Stations Graph",
+      "title": "Stands dispos Graphs",
       "type": "timeseries"
     },
     {
@@ -411,13 +391,13 @@
     "list": []
   },
   "time": {
-    "from": "2022-10-22T22:18:11.000Z",
-    "to": "2022-10-22T22:43:41.000Z"
+    "from": "2022-10-22T22:01:00.000Z",
+    "to": "2022-10-22T22:10:47.000Z"
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "??",
+  "title": "Dashboard Velov Lyon (live)",
   "uid": "uSAjpWNVk",
-  "version": 2,
+  "version": 3,
   "weekStart": ""
 }
